@@ -1,25 +1,28 @@
-# Linux IT Support Project - Local Office Simulation 
+# Linux IT Support Project – Local Office Simulation (v2)
 
-## Overview
-This project simulates a small office IT environment on Linux (WSL Ubuntu).  
-It demonstrates basic IT support tasks:
+This project simulates a small office IT environment using Linux.  
+It shows skills in:
 - User and group management
-- Directory permissions for different departments
-- Scheduled backups with cron
-- System monitoring with a custom script
+- Directory permissions
+- Bash scripting
+- Cron job scheduling
+- Git & GitHub
 
-## Scripts
-- `cleanup.sh` – removes temporary files
-- `monitor.sh` – logs CPU, memory, and disk usage
+## Features
+1. Created users and groups (sales, marketing).
+2. Restricted access to office directories.
+3. Added cleanup.sh to remove old logs weekly.
+4. Added monitor.sh to check disk usage daily.
+5. Automated with cron jobs.
 
-## Screenshots
-![Users and Groups](screenshots/users_and_groups.png)
-![Permissions Test](screenshots/permissions_test.png)
-![Cron Jobs](screenshots/cron_jobs.png)
+## How to Run
+- Make scripts executable:
+  chmod +x cleanup.sh monitor.sh
 
-## Skills Demonstrated
-- Linux system administration
-- File permissions and access control
-- Automation with cron
-- Shell scripting
-- Documentation and version control with Git
+- Run scripts manually:
+  ./cleanup.sh
+  ./monitor.sh
+
+- Add cron jobs:
+  crontab -e
+
